@@ -1,0 +1,24 @@
+.add-activity-form {
+  display: flex;
+  max-width: 40vw;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-activity-form input {
+  max-width: 22vw;
+  min-width: 170px;
+}
+
+.add-activity-btn {
+  background-color: brown;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.add-activity-btn:active {
+  background-color: rgb(208, 107, 107);
+}

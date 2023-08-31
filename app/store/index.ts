@@ -3,14 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const entriesSlice = createSlice({
   name: "entries",
-  initialState: {
-    entries: [],
-  },
+  initialState: { entries: [] as string[] },
   reducers: {
-    // replaceCart(state, action) {
-    //   state.totalQuantity = action.payload.totalQuantity;
-    //   state.items = action.payload.items;
-    // },
+    addActivity(state, action) {
+      state.entries = [...state.entries, action.payload];
+    },
   },
 });
 
@@ -18,6 +15,5 @@ const store = configureStore({
   reducer: { entries: entriesSlice.reducer },
 });
 
-export const cartActions = entriesSlice.actions;
-
+export const entries = entriesSlice;
 export default store;

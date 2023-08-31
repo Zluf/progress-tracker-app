@@ -1,5 +1,6 @@
-import styles from "./page.module.css";
+"use client";
 
+import styles from "./page.module.css";
 import AddActivity from "./components/AddActivity";
 import ActivityDashboard from "./components/ActivityDashboard";
 
